@@ -1,16 +1,13 @@
 <template>
   <div class="relative w-full h-full">
     <!-- 图片 -->
-    <NuxtImg 
+    <img 
       :src="props.src"
-      placeholder
-      fit="cover"
       class="w-full h-full object-center object-cover cursor-pointer transform-gpu transition-all ease-in-out duration-300 will-change-transform group-hover:scale-105"
       :alt="props.alt || '作品展示图片'" 
       @click="openPreview" 
       @load="handleImageLoad"
       loading="lazy"
-      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
     />
     
     <!-- 加载骨架屏 -->
@@ -48,17 +45,13 @@
             @click.stop
             @wheel="handleWheel"
           >
-            <NuxtImg 
+            <img 
               :src="props.src"
-              placeholder
-              fit="contain"
               :class="[
                 'object-contain rounded-lg shadow-2xl cursor-zoom-in transition-all duration-300',
                 isZoomed ? 'scale-150' : 'max-w-full max-h-full hover:scale-105'
               ]"
               :alt="props.alt || '作品展示图片'" 
-              loading="eager"
-              sizes="100vw"
               @click="toggleZoom"
             />
             
