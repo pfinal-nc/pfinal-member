@@ -18,6 +18,14 @@ export default defineNuxtConfig({
   // 修复 hydration 问题
   ssr: true,
   
+  // 禁用预渲染以避免服务端渲染问题
+  nitro: {
+    prerender: {
+      crawlLinks: false,
+      routes: []
+    }
+  },
+  
   // 颜色模式配置
   colorMode: {
     preference: 'system',

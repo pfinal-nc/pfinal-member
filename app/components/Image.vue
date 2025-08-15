@@ -162,11 +162,15 @@ const handleImageLoad = () => {
 
 // 监听键盘事件
 onMounted(() => {
-  document.addEventListener('keydown', handleKeydown)
+  if (process.client) {
+    document.addEventListener('keydown', handleKeydown)
+  }
 })
 
 onUnmounted(() => {
-  document.removeEventListener('keydown', handleKeydown)
+  if (process.client) {
+    document.removeEventListener('keydown', handleKeydown)
+  }
 })
 </script>
 
