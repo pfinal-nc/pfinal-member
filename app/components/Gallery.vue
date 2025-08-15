@@ -1,7 +1,8 @@
 <template>
   <div class="w-full">
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-5 gap-4 md:gap-6 auto-rows-fr">
-      <template v-for="(image, index) in images" :key="index">
+    <ClientOnly>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-5 gap-4 md:gap-6 auto-rows-fr">
+        <template v-for="(image, index) in images" :key="index">
         <div 
           class="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 h-full"
           :class="{
@@ -39,7 +40,13 @@
           </div>
         </div>
       </template>
-    </div>
+      </div>
+      <template #fallback>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-5 gap-4 md:gap-6">
+          <div v-for="i in 12" :key="i" class="aspect-square bg-gray-200 dark:bg-gray-700 rounded-xl animate-pulse"></div>
+        </div>
+      </template>
+    </ClientOnly>
   </div>
 </template>
 

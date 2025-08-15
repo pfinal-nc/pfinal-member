@@ -42,27 +42,28 @@
 </template>
 
 <script setup>
+// 使用 ClientOnly 包装动态内容以避免 hydration mismatch
 const config = useAppConfig();
 
-// 动态 SEO
+// 动态 SEO - 使用 ClientOnly 避免 hydration 问题
 useHead({
-  title: `${config.data.name} - ${config.data.title}`,
+  title: 'PFinalClub - Front End Developer',
   meta: [
     {
       name: 'description',
-      content: config.data.bio
+      content: 'An awesome team in Shanghai. We build modern, performant, secure and scalable web apps and sites.'
     },
     {
       property: 'og:title',
-      content: `${config.data.name} - ${config.data.title}`
+      content: 'PFinalClub - Front End Developer'
     },
     {
       property: 'og:description',
-      content: config.data.bio
+      content: 'An awesome team in Shanghai. We build modern, performant, secure and scalable web apps and sites.'
     },
     {
       property: 'og:image',
-      content: config.data.avatar
+      content: 'https://friday-go.icu/logo.png'
     }
   ],
   // 添加结构化数据
@@ -72,18 +73,17 @@ useHead({
       children: JSON.stringify({
         '@context': 'https://schema.org',
         '@type': 'Person',
-        name: config.data.name,
-        jobTitle: config.data.title,
-        description: config.data.bio,
-        image: config.data.avatar,
-        url: config.data.website,
-        email: config.data.email,
-        telephone: config.data.phone,
+        name: 'PFinalClub',
+        jobTitle: '开发工程师',
+        description: '来自上海的优秀团队。我们专注于构建现代化、高性能、安全且可扩展的 Web 应用和网站。',
+        image: 'https://friday-go.icu/logo.png',
+        url: 'https://friday-go.icu',
+        email: 'lampxiezi@gmail.com',
+        telephone: '+52 771 404 2659',
         sameAs: [
-          config.data.github,
-          config.data.facebook,
-          config.data.instagram
-        ].filter(Boolean),
+          'https://github.com/cesswhite/hato-minimal-template',
+          'https://www.facebook.com/ecostudiodev'
+        ],
         worksFor: {
           '@type': 'Organization',
           name: 'PFinalClub'

@@ -14,6 +14,16 @@ export default defineNuxtConfig({
 
   compatibilityDate: '2025-07-16',
   
+  // 修复 hydration 问题
+  ssr: true,
+  
+  // 颜色模式配置
+  colorMode: {
+    preference: 'system',
+    fallback: 'light',
+    classSuffix: '',
+  },
+  
   // SEO 配置
   app: {
     head: {
@@ -73,6 +83,15 @@ export default defineNuxtConfig({
       headers: {
         'Service-Worker-Allowed': '/'
       }
+    },
+    // 确保静态生成
+    '/': { prerender: true }
+  },
+  
+  // 静态站点生成配置
+  nitro: {
+    prerender: {
+      routes: ['/']
     }
   }
 })
