@@ -99,8 +99,12 @@
 </template>
 
 <script lang="ts" setup>
-const app = useAppConfig();
-const { instagram, x, facebook, github, website } = app.data;
+// 使用静态数据避免服务端渲染问题
+const instagram = '';
+const x = '';
+const facebook = 'https://www.facebook.com/ecostudiodev';
+const github = 'https://github.com/cesswhite/hato-minimal-template';
+const website = 'https://friday-go.icu';
 </script>
 
 <style scoped>

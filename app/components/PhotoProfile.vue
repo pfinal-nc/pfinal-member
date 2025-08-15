@@ -18,6 +18,7 @@
 </template>
 
 <script lang="ts" setup>
-const app = useAppConfig();
-const { avatar, name } = app.data;
+// 使用静态数据避免服务端渲染问题
+const avatar = 'https://friday-go.icu/logo.png';
+const name = 'PFinalClub';
 </script>

@@ -41,22 +41,22 @@
           
           <!-- 图片容器 -->
           <div 
-            class="relative w-full h-full flex items-center justify-center p-4" 
+            class="relative w-full h-full flex items-center justify-center" 
             @click.stop
             @wheel="handleWheel"
           >
             <img 
               :src="props.src"
               :class="[
-                'object-contain rounded-lg shadow-2xl cursor-zoom-in transition-all duration-300',
-                isZoomed ? 'scale-150' : 'max-w-full max-h-full hover:scale-105'
+                'object-contain cursor-zoom-in transition-all duration-300',
+                isZoomed ? 'scale-150' : 'w-full h-full hover:scale-105'
               ]"
               :alt="props.alt || '作品展示图片'" 
               @click="toggleZoom"
             />
             
             <!-- 图片信息 -->
-            <div class="absolute bottom-4 left-4 right-4 bg-black/50 backdrop-blur-sm rounded-lg p-3">
+            <div class="absolute bottom-4 left-4 right-4 bg-black/50 backdrop-blur-sm rounded-lg p-3 opacity-0 hover:opacity-100 transition-opacity duration-300">
               <p class="text-white text-sm font-medium">
                 {{ props.alt || '作品展示图片' }}
               </p>
@@ -212,8 +212,8 @@ img {
 
 /* 全屏预览时的图片样式 */
 .fixed img {
-  max-width: 95vw;
-  max-height: 95vh;
+  width: 100vw;
+  height: 100vh;
   object-fit: contain;
 }
 
@@ -221,5 +221,7 @@ img {
 .scale-150 {
   transform: scale(1.5);
   cursor: zoom-out;
+  width: 100vw;
+  height: 100vh;
 }
 </style>

@@ -42,10 +42,7 @@
 </template>
 
 <script setup>
-// 使用 ClientOnly 包装动态内容以避免 hydration mismatch
-const config = useAppConfig();
-
-// 动态 SEO - 使用 ClientOnly 避免 hydration 问题
+// 动态 SEO - 使用静态数据避免 hydration 问题
 useHead({
   title: 'PFinalClub - Front End Developer',
   meta: [

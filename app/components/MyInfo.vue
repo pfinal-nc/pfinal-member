@@ -34,8 +34,10 @@
 </template>
 
 <script lang="ts" setup>
-const app = useAppConfig();
-const { title, name, bio } = app.data;
+// 使用静态数据避免服务端渲染问题
+const title = '开发工程师';
+const name = 'PFinalClub';
+const bio = '来自上海的优秀团队。我们专注于构建现代化、高性能、安全且可扩展的 Web 应用和网站。';
 </script>
 
 <style scoped>

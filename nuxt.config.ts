@@ -89,15 +89,6 @@ export default defineNuxtConfig({
       headers: {
         'Service-Worker-Allowed': '/'
       }
-    },
-    // 确保静态生成
-    '/': { prerender: true }
-  },
-  
-  // 静态站点生成配置
-  nitro: {
-    prerender: {
-      routes: ['/']
     }
   }
 })

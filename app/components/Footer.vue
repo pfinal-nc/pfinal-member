@@ -43,8 +43,9 @@
 </template>
 
 <script setup>
-const app = useAppConfig();
-const { email, phone } = app.data;
+// 使用静态数据避免服务端渲染问题
+const email = 'lampxiezi@gmail.com';
+const phone = '+52 771 404 2659';
 </script>
 
 <style scoped>
