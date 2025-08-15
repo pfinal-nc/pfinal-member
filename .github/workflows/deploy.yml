@@ -81,8 +81,16 @@ jobs:
           key: ${{ runner.os }}-nuxt-build-${{ hashFiles('**/package-lock.json', '**/yarn.lock', '**/pnpm-lock.yaml') }}
           restore-keys: |
             ${{ runner.os }}-nuxt-build-
+      - name: Debug files
+        run: |
+          echo "Current directory: $(pwd)"
+          echo "Files in current directory:"
+          ls -la
+          echo "Checking for lock files:"
+          ls -la | grep -E "(package|pnpm|yarn|npm)" || echo "No lock files found"
+
       - name: Install dependencies
-        run: pnpm install --frozen-lockfile
+        run: pnpm install
       - name: Static HTML export with Nuxt
         run: pnpm run generate
       - name: Upload artifact
