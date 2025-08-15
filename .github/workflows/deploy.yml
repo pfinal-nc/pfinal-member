@@ -46,11 +46,16 @@ jobs:
             echo "Unable to determine package manager"
             exit 1
           fi
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v2
+        with:
+          version: latest
+
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
           node-version: "20"
-          cache: ${{ steps.detect-package-manager.outputs.manager }}
+          cache: "pnpm"
       - name: Setup Pages
         uses: actions/configure-pages@v5
         with:
@@ -63,9 +68,9 @@ jobs:
         uses: actions/cache@v4
         with:
           path: |
-            dist
             .nuxt
-          key: ${{ runner.os }}-nuxt-build-${{ hashFiles('dist') }}
+            .output
+          key: ${{ runner.os }}-nuxt-build-${{ hashFiles('**/package-lock.json', '**/yarn.lock', '**/pnpm-lock.yaml') }}
           restore-keys: |
             ${{ runner.os }}-nuxt-build-
       - name: Install dependencies
@@ -75,7 +80,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./dist
+          path: ./.output/public
 
   # Deployment job
   deploy:
