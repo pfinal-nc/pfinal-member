@@ -6,7 +6,6 @@ export default defineNuxtConfig({
     '@nuxt/ui',
     '@nuxt/eslint',
     '@vueuse/motion/nuxt',
-    '@nuxt/image',
     '@nuxtjs/sitemap',
     '@nuxtjs/robots',
   ],

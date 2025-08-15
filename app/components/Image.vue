@@ -3,7 +3,7 @@
     <!-- 图片 -->
     <NuxtImg 
       :src="props.src"
-      :placeholder="img(props.src, { h: 20, w: 20, blur: 16, q: 90 })" 
+      placeholder
       fit="cover"
       class="w-full h-full object-center object-cover cursor-pointer transform-gpu transition-all ease-in-out duration-300 will-change-transform group-hover:scale-105"
       :alt="props.alt || '作品展示图片'" 
@@ -50,7 +50,7 @@
           >
             <NuxtImg 
               :src="props.src"
-              :placeholder="img(props.src, { h: 20, w: 20, blur: 16, q: 90 })" 
+              placeholder
               fit="contain"
               :class="[
                 'object-contain rounded-lg shadow-2xl cursor-zoom-in transition-all duration-300',
@@ -103,7 +103,8 @@
 const showPreviewModal = ref(false)
 const isLoading = ref(true)
 const isZoomed = ref(false)
-const img = useImage()
+// 在 Nuxt 4 中，图片功能已经内置，不需要 useImage()
+// const img = useImage()
 
 const props = defineProps<{
     src: string
