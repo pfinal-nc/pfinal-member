@@ -91,8 +91,19 @@ jobs:
 
       - name: Install dependencies
         run: pnpm install
-      - name: Build Nuxt application
-        run: pnpm run build
+      - name: Generate static site
+        run: pnpm run generate
+      - name: Debug build output
+        run: |
+          echo "Build output directory:"
+          ls -la .output/
+          echo "Public directory:"
+          ls -la .output/public/ || echo "Public directory not found"
+          echo "Server directory:"
+          ls -la .output/server/ || echo "Server directory not found"
+          echo "Dist directory:"
+          ls -la dist/ || echo "Dist directory not found"
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:

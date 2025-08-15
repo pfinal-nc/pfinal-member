@@ -15,14 +15,14 @@ export default defineNuxtConfig({
 
   compatibilityDate: '2025-07-16',
   
-  // 修复 hydration 问题
-  ssr: true,
+  // 静态站点生成配置
+  ssr: false,
   
-  // 禁用预渲染以避免服务端渲染问题
+  // 静态部署配置
   nitro: {
     prerender: {
-      crawlLinks: false,
-      routes: []
+      crawlLinks: true,
+      routes: ['/']
     }
   },
   
@@ -97,6 +97,8 @@ export default defineNuxtConfig({
       headers: {
         'Service-Worker-Allowed': '/'
       }
-    }
+    },
+    // 确保主页被静态生成
+    '/': { prerender: true }
   }
 })
