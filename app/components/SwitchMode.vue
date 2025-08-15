@@ -22,6 +22,9 @@
 </template>
 
 <script lang="ts" setup>
+// 导入 useColorMode
+import { useColorMode } from '#imports'
+
 // 只在客户端执行颜色模式相关代码
 let color: any = null;
 
