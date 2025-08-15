@@ -43,7 +43,8 @@
 
 <script setup>
 // 动态 SEO - 使用静态数据避免 hydration 问题
-useHead({
+if (process.client) {
+  useHead({
   title: 'PFinalClub - Front End Developer',
   meta: [
     {
@@ -88,5 +89,6 @@ useHead({
       })
     }
   ]
-})
+  })
+}
 </script>

@@ -22,10 +22,17 @@
 </template>
 
 <script lang="ts" setup>
-const color = useColorMode();
+// 只在客户端执行颜色模式相关代码
+let color: any = null;
+
+if (process.client) {
+    color = useColorMode();
+}
 
 function toggleDark() {
-    color.preference = color.preference === 'dark' ? 'light' : 'dark';
+    if (color) {
+        color.preference = color.preference === 'dark' ? 'light' : 'dark';
+    }
 }
 </script>
 
