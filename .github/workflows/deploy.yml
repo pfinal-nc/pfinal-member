@@ -1,6 +1,6 @@
 # Sample workflow for building and deploying a Nuxt site to GitHub Pages
 #
-# To get started with Nuxt see: https://nuxtjs.org/docs/get-started/installation
+# To get started with Nuxt see: https://nuxtjs.org/docs/getting-started/installation
 #
 name: Deploy Nuxt site to Pages
 
@@ -78,33 +78,34 @@ jobs:
           path: |
             .nuxt
             .output
+            node_modules/.cache
           key: ${{ runner.os }}-nuxt-build-${{ hashFiles('**/package-lock.json', '**/yarn.lock', '**/pnpm-lock.yaml') }}
           restore-keys: |
             ${{ runner.os }}-nuxt-build-
-      - name: Debug files
-        run: |
-          echo "Current directory: $(pwd)"
-          echo "Files in current directory:"
-          ls -la
-          echo "Checking for lock files:"
-          ls -la | grep -E "(package|pnpm|yarn|npm)" || echo "No lock files found"
-          echo "Checking node_modules for @nuxtjs/color-mode:"
-          ls -la node_modules/@nuxtjs/color-mode || echo "@nuxtjs/color-mode not found"
 
       - name: Install dependencies
-        run: pnpm install
+        run: pnpm install --frozen-lockfile
+
+      - name: Build application
+        run: pnpm run build
+        env:
+          NODE_ENV: production
+
       - name: Generate static site
         run: pnpm run generate
+        env:
+          NODE_ENV: production
+
       - name: Debug build output
         run: |
           echo "Build output directory:"
           ls -la .output/
           echo "Public directory:"
           ls -la .output/public/ || echo "Public directory not found"
-          echo "Server directory:"
-          ls -la .output/server/ || echo "Server directory not found"
-          echo "Dist directory:"
-          ls -la dist/ || echo "Dist directory not found"
+          echo "Checking for CSS files:"
+          find .output/public -name "*.css" -type f || echo "No CSS files found"
+          echo "Checking for JS files:"
+          find .output/public -name "*.js" -type f || echo "No JS files found"
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3

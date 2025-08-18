@@ -17,15 +17,17 @@ export default defineNuxtConfig({
   // 静态站点生成配置 - 完全禁用 SSR 和预渲染
   ssr: false,
   
-  // 静态部署配置
+  // 静态部署配置 - 修复 GitHub Pages 部署问题
   nitro: {
-    prerender: false
+    prerender: {
+      routes: ['/']
+    }
   },
-  
 
-  
-  // SEO 配置
+  // 添加 base 路径配置 - 解决自定义域名部署问题
   app: {
+    baseURL: '/',
+    buildAssetsDir: '/_nuxt/',
     head: {
       title: 'PFinalClub - Front End Developer',
       meta: [
@@ -44,7 +46,7 @@ export default defineNuxtConfig({
         { property: 'og:title', content: 'PFinalClub - Front End Developer' },
         { property: 'og:description', content: 'An awesome team in Shanghai. We build modern, performant, secure and scalable web apps and sites.' },
         { property: 'og:image', content: 'https://friday-go.icu/logo.png' },
-        { property: 'og:url', content: 'https://friday-go.icu' },
+        { property: 'og:url', content: 'https://member.friday-go.icu' },
         { property: 'og:site_name', content: 'PFinalClub' },
         
         // Twitter Card
@@ -55,7 +57,7 @@ export default defineNuxtConfig({
       ],
       link: [
         { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-        { rel: 'canonical', href: 'https://friday-go.icu' },
+        { rel: 'canonical', href: 'https://member.friday-go.icu' },
       ],
     },
   },
@@ -82,6 +84,20 @@ export default defineNuxtConfig({
       static: true,
       headers: {
         'Service-Worker-Allowed': '/'
+      }
+    }
+  },
+
+  // 添加 Vite 配置以优化构建
+  vite: {
+    build: {
+      rollupOptions: {
+        output: {
+          manualChunks: {
+            'nuxt-ui': ['@nuxt/ui'],
+            'vueuse': ['@vueuse/motion']
+          }
+        }
       }
     }
   }
