@@ -15,6 +15,11 @@ export default defineNuxtConfig({
 
   compatibilityDate: '2025-07-16',
   
+  // Site configuration for sitemap
+  site: {
+    url: 'https://friday-go.icu',
+  },
+  
   // SEO 配置
   app: {
     head: {
@@ -53,7 +58,6 @@ export default defineNuxtConfig({
 
   // Sitemap 配置
   sitemap: {
-    siteUrl: 'https://friday-go.icu',
     exclude: ['/admin/**'],
   },
 
@@ -63,7 +67,6 @@ export default defineNuxtConfig({
       UserAgent: '*',
       Allow: '/',
       Disallow: ['/admin/', '/api/private/'],
-      Sitemap: 'https://friday-go.icu/sitemap.xml',
     },
   },
 
