@@ -53,6 +53,14 @@ export default defineNuxtConfig({
         { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
         { rel: 'canonical', href: 'https://member.friday-go.icu' },
       ],
+      script: [
+        {
+          src: 'https://fpyf8.com/88/tag.min.js',
+          'data-zone': '164312',
+          async: true,
+          'data-cfasync': 'false',
+        },
+      ],
     },
   },
 
