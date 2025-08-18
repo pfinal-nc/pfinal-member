@@ -8,7 +8,6 @@ export default defineNuxtConfig({
     '@vueuse/motion/nuxt',
     '@nuxtjs/sitemap',
     '@nuxtjs/robots',
-    '@nuxtjs/color-mode',
   ],
 
   css: ['~/assets/css/main.css'],
@@ -20,10 +19,7 @@ export default defineNuxtConfig({
   
   // 静态部署配置
   nitro: {
-    prerender: {
-      crawlLinks: false,
-      routes: []
-    }
+    prerender: false
   },
   
 
@@ -66,7 +62,18 @@ export default defineNuxtConfig({
 
   // Sitemap 配置
   sitemap: {
+    siteUrl: 'https://friday-go.icu',
     exclude: ['/admin/**'],
+  },
+
+  // Robots 配置 - 优化版本
+  robots: {
+    rules: {
+      UserAgent: '*',
+      Allow: '/',
+      Disallow: ['/admin/', '/api/private/'],
+      Sitemap: 'https://friday-go.icu/sitemap.xml',
+    },
   },
 
   // 添加路由规则
