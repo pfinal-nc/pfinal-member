@@ -6,6 +6,7 @@ export default defineNuxtConfig({
     '@nuxt/ui',
     '@nuxt/eslint',
     '@vueuse/motion/nuxt',
+    '@nuxt/image',
     '@nuxtjs/sitemap',
     '@nuxtjs/robots',
   ],
@@ -14,20 +15,8 @@ export default defineNuxtConfig({
 
   compatibilityDate: '2025-07-16',
   
-  // 静态站点生成配置 - 完全禁用 SSR 和预渲染
-  ssr: false,
-  
-  // 静态部署配置 - 修复 GitHub Pages 部署问题
-  nitro: {
-    prerender: {
-      routes: ['/']
-    }
-  },
-
-  // 添加 base 路径配置 - 解决自定义域名部署问题
+  // SEO 配置
   app: {
-    baseURL: '/',
-    buildAssetsDir: '/_nuxt/',
     head: {
       title: 'PFinalClub - Front End Developer',
       meta: [
@@ -64,7 +53,7 @@ export default defineNuxtConfig({
 
   // Sitemap 配置
   sitemap: {
-    siteUrl: 'https://member.friday-go.icu',
+    siteUrl: 'https://friday-go.icu',
     exclude: ['/admin/**'],
   },
 
@@ -74,7 +63,7 @@ export default defineNuxtConfig({
       UserAgent: '*',
       Allow: '/',
       Disallow: ['/admin/', '/api/private/'],
-      Sitemap: 'https://member.friday-go.icu/sitemap.xml',
+      Sitemap: 'https://friday-go.icu/sitemap.xml',
     },
   },
 
@@ -84,20 +73,6 @@ export default defineNuxtConfig({
       static: true,
       headers: {
         'Service-Worker-Allowed': '/'
-      }
-    }
-  },
-
-  // 添加 Vite 配置以优化构建
-  vite: {
-    build: {
-      rollupOptions: {
-        output: {
-          manualChunks: {
-            'nuxt-ui': ['@nuxt/ui'],
-            'vueuse': ['@vueuse/motion']
-          }
-        }
       }
     }
   }

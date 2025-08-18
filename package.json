@@ -14,9 +14,8 @@
   "dependencies": {
     "@iconify-json/lucide": "^1.2.58",
     "@iconify-json/simple-icons": "^1.2.44",
-
+    "@nuxt/image": "^1.11.0",
     "@nuxt/ui": "^3.3.0",
-    "@nuxtjs/color-mode": "^3.3.2",
     "@nuxtjs/robots": "^5.4.0",
     "@nuxtjs/sitemap": "^7.4.3",
     "@vueuse/motion": "^3.0.3",
@@ -26,10 +25,7 @@
     "@iconify-json/heroicons": "^1.2.2",
     "@nuxt/eslint": "^1.7.1",
     "@vite-pwa/nuxt": "^1.0.4",
-    "autoprefixer": "^10.4.20",
     "eslint": "^9.32.0",
-    "postcss": "^8.4.49",
-    "tailwindcss": "^3.4.17",
     "typescript": "^5.8.3"
   }
 }
