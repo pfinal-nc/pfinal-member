@@ -8,6 +8,7 @@ export default defineNuxtConfig({
     '@vueuse/motion/nuxt',
     '@nuxtjs/sitemap',
     '@nuxtjs/robots',
+    '@nuxtjs/color-mode',
   ],
 
   css: ['~/assets/css/main.css'],
