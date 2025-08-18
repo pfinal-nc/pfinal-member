@@ -17,7 +17,7 @@ export default defineNuxtConfig({
   
   // Site configuration for sitemap
   site: {
-    url: 'https://friday-go.icu',
+    url: 'https://member.friday-go.icu',
   },
   
   // SEO 配置
