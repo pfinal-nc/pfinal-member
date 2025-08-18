@@ -11,8 +11,6 @@ export default defineNuxtConfig({
     '@nuxtjs/robots',
   ],
 
-  css: ['~/assets/css/main.css'],
-
   compatibilityDate: '2025-07-16',
   
   // SEO 配置
