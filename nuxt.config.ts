@@ -62,7 +62,7 @@ export default defineNuxtConfig({
 
   // Sitemap 配置
   sitemap: {
-    siteUrl: 'https://friday-go.icu',
+    siteUrl: 'https://member.friday-go.icu',
     exclude: ['/admin/**'],
   },
 
@@ -72,7 +72,7 @@ export default defineNuxtConfig({
       UserAgent: '*',
       Allow: '/',
       Disallow: ['/admin/', '/api/private/'],
-      Sitemap: 'https://friday-go.icu/sitemap.xml',
+      Sitemap: 'https://member.friday-go.icu/sitemap.xml',
     },
   },
 
