@@ -8,7 +8,6 @@ export default defineNuxtConfig({
     '@vueuse/motion/nuxt',
     '@nuxtjs/sitemap',
     '@nuxtjs/robots',
-    '@nuxtjs/color-mode',
   ],
 
   css: ['~/assets/css/main.css'],
@@ -23,17 +22,7 @@ export default defineNuxtConfig({
     prerender: false
   },
   
-  // 颜色模式配置
-  colorMode: {
-    preference: 'system',
-    fallback: 'light',
-    classSuffix: '',
-    storageKey: 'nuxt-color-mode',
-    globalName: '__NUXT_COLOR_MODE__',
-    componentName: 'ColorScheme',
-    classPrefix: '',
-    dataValue: 'theme'
-  },
+
   
   // SEO 配置
   app: {
