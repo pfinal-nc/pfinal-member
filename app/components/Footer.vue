@@ -12,15 +12,6 @@
             <span class="font-medium">{{ email }}</span>
             <div class="w-0 group-hover:w-full h-0.5 bg-emerald-500 transition-all duration-300"></div>
           </NuxtLink>
-          
-          <NuxtLink 
-            :to="`tel:${phone}`"
-            class="group flex items-center gap-2 text-sm text-zinc-600 hover:text-emerald-600 dark:text-zinc-400 dark:hover:text-emerald-400 transition-colors duration-200"
-          >
-            <UIcon name="i-heroicons-phone" class="w-4 h-4" />
-            <span class="font-medium">{{ phone }}</span>
-            <div class="w-0 group-hover:w-full h-0.5 bg-emerald-500 transition-all duration-300"></div>
-          </NuxtLink>
         </div>
         
         <!-- 版权信息 -->
@@ -45,7 +36,6 @@
 <script setup>
 // 使用静态数据避免服务端渲染问题
 const email = 'lampxiezi@gmail.com';
-const phone = '+52 771 404 2659';
 </script>
 
 <style scoped>
