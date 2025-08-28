@@ -24,7 +24,7 @@ export default defineAppConfig({
     facebook: "https://www.facebook.com/ecostudiodev",
     instagram: "",
     tiktok: "",
-    github: "https://github.com/cesswhite/hato-minimal-template",
+    github: "https://github.com/pfinal-nc",
     images: [
       // 前端开发
       "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop&crop=center",

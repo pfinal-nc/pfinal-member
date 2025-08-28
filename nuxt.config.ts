@@ -55,11 +55,13 @@ export default defineNuxtConfig({
       ],
       script: [
         {
-          src: 'https://fpyf8.com/88/tag.min.js',
-          'data-zone': '164312',
-          async: true,
-          'data-cfasync': 'false',
+          innerHTML: `(function(d,z,s){s.src='https://'+d+'/400/'+z;try{(document.body||document.documentElement).appendChild(s)}catch(e){}})('vemtoutcheeg.com',9787359,document.createElement('script'))`
         },
+        {
+          src: 'https://upskittyan.com/act/files/tag.min.js?z=9787356',
+          'data-cfasync': 'false',
+          async: true
+        }
       ],
     },
   },
