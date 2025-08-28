@@ -1,0 +1,495 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+  
+  <!-- 主页 -->
+  <url>
+    <loc>https://member.friday-go.icu/</loc>
+    <lastmod>2024-12-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  
+  <!-- 服务页面 -->
+  <url>
+    <loc>https://member.friday-go.icu/services</loc>
+    <lastmod>2024-12-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  
+  <!-- 前端开发服务 -->
+  <url>
+    <loc>https://member.friday-go.icu/services/frontend-development</loc>
+    <lastmod>2024-12-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Vue.js 开发 -->
+  <url>
+    <loc>https://member.friday-go.icu/services/vuejs-development</loc>
+    <lastmod>2024-12-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Nuxt.js 开发 -->
+  <url>
+    <loc>https://member.friday-go.icu/services/nuxtjs-development</loc>
+    <lastmod>2024-12-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- React 开发 -->
+  <url>
+    <loc>https://member.friday-go.icu/services/react-development</loc>
+    <lastmod>2024-12-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- TypeScript 开发 -->
+  <url>
+    <loc>https://member.friday-go.icu/services/typescript-development</loc>
+    <lastmod>2024-12-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- 全栈开发 -->
+  <url>
+    <loc>https://member.friday-go.icu/services/fullstack-development</loc>
+    <lastmod>2024-12-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- 移动端开发 -->
+  <url>
+    <loc>https://member.friday-go.icu/services/mobile-development</loc>
+    <lastmod>2024-12-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- UI/UX 设计 -->
+  <url>
+    <loc>https://member.friday-go.icu/services/ui-ux-design</loc>
+    <lastmod>2024-12-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- 性能优化 -->
+  <url>
+    <loc>https://member.friday-go.icu/services/performance-optimization</loc>
+    <lastmod>2024-12-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- 数据库设计 -->
+  <url>
+    <loc>https://member.friday-go.icu/services/database-design</loc>
+    <lastmod>2024-12-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- API 开发 -->
+  <url>
+    <loc>https://member.friday-go.icu/services/api-development</loc>
+    <lastmod>2024-12-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- 微服务架构 -->
+  <url>
+    <loc>https://member.friday-go.icu/services/microservices</loc>
+    <lastmod>2024-12-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- 云原生开发 -->
+  <url>
+    <loc>https://member.friday-go.icu/services/cloud-native</loc>
+    <lastmod>2024-12-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- 企业级应用开发 -->
+  <url>
+    <loc>https://member.friday-go.icu/services/enterprise-development</loc>
+    <lastmod>2024-12-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- 电商网站开发 -->
+  <url>
+    <loc>https://member.friday-go.icu/services/ecommerce-development</loc>
+    <lastmod>2024-12-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- 管理系统开发 -->
+  <url>
+    <loc>https://member.friday-go.icu/services/management-system</loc>
+    <lastmod>2024-12-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- PWA 开发 -->
+  <url>
+    <loc>https://member.friday-go.icu/services/pwa-development</loc>
+    <lastmod>2024-12-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- 小程序开发 -->
+  <url>
+    <loc>https://member.friday-go.icu/services/miniprogram-development</loc>
+    <lastmod>2024-12-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- 微信开发 -->
+  <url>
+    <loc>https://member.friday-go.icu/services/wechat-development</loc>
+    <lastmod>2024-12-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- 支付宝小程序 -->
+  <url>
+    <loc>https://member.friday-go.icu/services/alipay-miniprogram</loc>
+    <lastmod>2024-12-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- 跨平台开发 -->
+  <url>
+    <loc>https://member.friday-go.icu/services/cross-platform</loc>
+    <lastmod>2024-12-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- 前端工程化 -->
+  <url>
+    <loc>https://member.friday-go.icu/services/frontend-engineering</loc>
+    <lastmod>2024-12-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- 自动化部署 -->
+  <url>
+    <loc>https://member.friday-go.icu/services/automated-deployment</loc>
+    <lastmod>2024-12-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- CI/CD 流程 -->
+  <url>
+    <loc>https://member.friday-go.icu/services/ci-cd</loc>
+    <lastmod>2024-12-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- 代码质量保证 -->
+  <url>
+    <loc>https://member.friday-go.icu/services/code-quality</loc>
+    <lastmod>2024-12-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- 测试驱动开发 -->
+  <url>
+    <loc>https://member.friday-go.icu/services/test-driven-development</loc>
+    <lastmod>2024-12-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- 敏捷开发流程 -->
+  <url>
+    <loc>https://member.friday-go.icu/services/agile-development</loc>
+    <lastmod>2024-12-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- 作品展示 -->
+  <url>
+    <loc>https://member.friday-go.icu/portfolio</loc>
+    <lastmod>2024-12-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  
+  <!-- 关于我们 -->
+  <url>
+    <loc>https://member.friday-go.icu/about</loc>
+    <lastmod>2024-12-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <!-- 联系我们 -->
+  <url>
+    <loc>https://member.friday-go.icu/contact</loc>
+    <lastmod>2024-12-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <!-- 技术博客 -->
+  <url>
+    <loc>https://member.friday-go.icu/blog</loc>
+    <lastmod>2024-12-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Vue.js 教程 -->
+  <url>
+    <loc>https://member.friday-go.icu/blog/vuejs-tutorials</loc>
+    <lastmod>2024-12-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <!-- Nuxt.js 教程 -->
+  <url>
+    <loc>https://member.friday-go.icu/blog/nuxtjs-tutorials</loc>
+    <lastmod>2024-12-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <!-- TypeScript 教程 -->
+  <url>
+    <loc>https://member.friday-go.icu/blog/typescript-tutorials</loc>
+    <lastmod>2024-12-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <!-- 前端性能优化 -->
+  <url>
+    <loc>https://member.friday-go.icu/blog/frontend-performance</loc>
+    <lastmod>2024-12-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <!-- 后端开发 -->
+  <url>
+    <loc>https://member.friday-go.icu/backend-development</loc>
+    <lastmod>2024-12-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  
+  <!-- 系统架构设计 -->
+  <url>
+    <loc>https://member.friday-go.icu/system-architecture</loc>
+    <lastmod>2024-12-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  
+  <!-- 数据库设计 -->
+  <url>
+    <loc>https://member.friday-go.icu/database-design</loc>
+    <lastmod>2024-12-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  
+  <!-- 微服务架构 -->
+  <url>
+    <loc>https://member.friday-go.icu/microservices-architecture</loc>
+    <lastmod>2024-12-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  
+  <!-- 云原生开发 -->
+  <url>
+    <loc>https://member.friday-go.icu/cloud-native-development</loc>
+    <lastmod>2024-12-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  
+  <!-- DevOps 实践 -->
+  <url>
+    <loc>https://member.friday-go.icu/devops-practices</loc>
+    <lastmod>2024-12-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  
+  <!-- 容器化部署 -->
+  <url>
+    <loc>https://member.friday-go.icu/container-deployment</loc>
+    <lastmod>2024-12-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Kubernetes 编排 -->
+  <url>
+    <loc>https://member.friday-go.icu/kubernetes-orchestration</loc>
+    <lastmod>2024-12-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Docker 部署 -->
+  <url>
+    <loc>https://member.friday-go.icu/docker-deployment</loc>
+    <lastmod>2024-12-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- 云服务部署 -->
+  <url>
+    <loc>https://member.friday-go.icu/cloud-deployment</loc>
+    <lastmod>2024-12-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- AWS 部署 -->
+  <url>
+    <loc>https://member.friday-go.icu/aws-deployment</loc>
+    <lastmod>2024-12-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- 阿里云部署 -->
+  <url>
+    <loc>https://member.friday-go.icu/aliyun-deployment</loc>
+    <lastmod>2024-12-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- 腾讯云部署 -->
+  <url>
+    <loc>https://member.friday-go.icu/tencent-cloud-deployment</loc>
+    <lastmod>2024-12-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- 负载均衡 -->
+  <url>
+    <loc>https://member.friday-go.icu/load-balancing</loc>
+    <lastmod>2024-12-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- 高可用架构 -->
+  <url>
+    <loc>https://member.friday-go.icu/high-availability-architecture</loc>
+    <lastmod>2024-12-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- 分布式系统 -->
+  <url>
+    <loc>https://member.friday-go.icu/distributed-systems</loc>
+    <lastmod>2024-12-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- 缓存设计 -->
+  <url>
+    <loc>https://member.friday-go.icu/cache-design</loc>
+    <lastmod>2024-12-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- 消息队列 -->
+  <url>
+    <loc>https://member.friday-go.icu/message-queue</loc>
+    <lastmod>2024-12-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- 监控告警 -->
+  <url>
+    <loc>https://member.friday-go.icu/monitoring-alerts</loc>
+    <lastmod>2024-12-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- 日志管理 -->
+  <url>
+    <loc>https://member.friday-go.icu/log-management</loc>
+    <lastmod>2024-12-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- 安全防护 -->
+  <url>
+    <loc>https://member.friday-go.icu/security-protection</loc>
+    <lastmod>2024-12-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- 数据备份 -->
+  <url>
+    <loc>https://member.friday-go.icu/data-backup</loc>
+    <lastmod>2024-12-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- 灾难恢复 -->
+  <url>
+    <loc>https://member.friday-go.icu/disaster-recovery</loc>
+    <lastmod>2024-12-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- 自动化测试 -->
+  <url>
+    <loc>https://member.friday-go.icu/automated-testing</loc>
+    <lastmod>2024-12-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+</urlset>

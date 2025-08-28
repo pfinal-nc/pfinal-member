@@ -101,9 +101,9 @@
 <script lang="ts" setup>
 // 使用静态数据避免服务端渲染问题
 const instagram = '';
-const x = '';
+const x = 'https://x.com/NPfinal';
 const facebook = 'https://www.facebook.com/ecostudiodev';
-const github = 'https://github.com/cesswhite/hato-minimal-template';
+const github = 'https://github.com/pfinal-nc';
 const website = 'https://friday-go.icu';
 </script>
 

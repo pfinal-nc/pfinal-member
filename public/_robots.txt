@@ -1,9 +1,150 @@
 User-agent: *
 Allow: /
 
-# Sitemap
-Sitemap: https://friday-go.icu/sitemap.xml
+# 允许搜索引擎爬取所有页面
+Allow: /services/
+Allow: /portfolio/
+Allow: /blog/
+Allow: /about/
+Allow: /contact/
 
-# Only disallow admin areas
+# 禁止爬取管理页面和私有内容
 Disallow: /admin/
 Disallow: /api/private/
+Disallow: /_nuxt/
+Disallow: /node_modules/
+Disallow: /.git/
+Disallow: /.env
+Disallow: /package.json
+Disallow: /package-lock.json
+Disallow: /pnpm-lock.yaml
+Disallow: /yarn.lock
+
+# 允许爬取静态资源
+Allow: /assets/
+Allow: /images/
+Allow: /css/
+Allow: /js/
+Allow: /fonts/
+
+# 站点地图
+Sitemap: https://member.friday-go.icu/sitemap.xml
+
+# 爬取延迟（秒）
+Crawl-delay: 1
+
+# 针对特定搜索引擎的优化
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0.5
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Baiduspider
+Allow: /
+Crawl-delay: 1
+
+User-agent: 360Spider
+Allow: /
+Crawl-delay: 1
+
+User-agent: Sogou spider
+Allow: /
+Crawl-delay: 1
+
+User-agent: YandexBot
+Allow: /
+Crawl-delay: 1
+
+# 移动端爬虫
+User-agent: Googlebot-Mobile
+Allow: /
+
+User-agent: Bingbot-Mobile
+Allow: /
+
+# 图片爬虫
+User-agent: Googlebot-Image
+Allow: /
+Allow: /images/
+Allow: /assets/
+
+User-agent: Bingbot-Image
+Allow: /
+Allow: /images/
+Allow: /assets/
+
+# 视频爬虫
+User-agent: Googlebot-Video
+Allow: /
+
+User-agent: Bingbot-Video
+Allow: /
+
+# 新闻爬虫
+User-agent: Googlebot-News
+Allow: /
+Allow: /blog/
+
+User-agent: Bingbot-News
+Allow: /
+Allow: /blog/
+
+# 广告爬虫
+User-agent: AdsBot-Google
+Allow: /
+
+User-agent: AdsBot-Google-Mobile
+Allow: /
+
+# 社交媒体爬虫
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: LinkedInBot
+Allow: /
+
+User-agent: WhatsApp
+Allow: /
+
+User-agent: TelegramBot
+Allow: /
+
+# 其他常见爬虫
+User-agent: AhrefsBot
+Allow: /
+Crawl-delay: 2
+
+User-agent: SemrushBot
+Allow: /
+Crawl-delay: 2
+
+User-agent: MJ12bot
+Allow: /
+Crawl-delay: 2
+
+User-agent: DotBot
+Allow: /
+Crawl-delay: 2
+
+User-agent: Screaming Frog SEO Spider
+Allow: /
+Crawl-delay: 1
+
+# 禁止恶意爬虫
+User-agent: *
+Disallow: /admin/
+Disallow: /api/private/
+Disallow: /_nuxt/
+Disallow: /node_modules/
+Disallow: /.git/
+Disallow: /.env
+Disallow: /package.json
+Disallow: /package-lock.json
+Disallow: /pnpm-lock.yaml
+Disallow: /yarn.lock
