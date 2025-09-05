@@ -4,7 +4,7 @@
     <img 
       :src="props.src"
       class="w-full h-full object-center object-cover cursor-pointer transform-gpu transition-all ease-in-out duration-300 will-change-transform group-hover:scale-105"
-      :alt="props.alt || '作品展示图片'" 
+      :alt="props.alt || 'Work showcase image'" 
       @click="openPreview" 
       @load="handleImageLoad"
       loading="lazy"
@@ -31,7 +31,7 @@
           <!-- 关闭按钮 -->
           <div class="absolute top-4 right-4 z-10">
             <UButton 
-              aria-label="关闭图片预览" 
+              aria-label="Close image preview" 
               variant="link" 
               icon="i-heroicons-x-mark-20-solid" 
               class="text-white hover:text-gray-300 ring-1 ring-white/20 hover:ring-white/40 transition-all duration-200" 
@@ -51,17 +51,17 @@
                 'object-contain cursor-zoom-in transition-all duration-300',
                 isZoomed ? 'scale-150' : 'w-full h-full hover:scale-105'
               ]"
-              :alt="props.alt || '作品展示图片'" 
+              :alt="props.alt || 'Work showcase image'" 
               @click="toggleZoom"
             />
             
             <!-- 图片信息 -->
             <div class="absolute bottom-4 left-4 right-4 bg-black/50 backdrop-blur-sm rounded-lg p-3 opacity-0 hover:opacity-100 transition-opacity duration-300">
               <p class="text-white text-sm font-medium">
-                {{ props.alt || '作品展示图片' }}
+                {{ props.alt || 'Work showcase image' }}
               </p>
               <p class="text-white/70 text-xs mt-1">
-                {{ isZoomed ? '点击图片缩小' : '点击图片放大' }}，ESC 键关闭
+                {{ isZoomed ? 'Click to zoom out' : 'Click to zoom in' }}, ESC to close
               </p>
             </div>
           </div>
@@ -69,7 +69,7 @@
           <!-- 导航按钮 -->
           <div class="absolute left-4 top-1/2 transform -translate-y-1/2">
             <UButton 
-              aria-label="上一张图片" 
+              aria-label="Previous image" 
               variant="link" 
               icon="i-heroicons-chevron-left-20-solid" 
               class="text-white hover:text-gray-300 ring-1 ring-white/20 hover:ring-white/40 transition-all duration-200" 
@@ -79,7 +79,7 @@
           
           <div class="absolute right-4 top-1/2 transform -translate-y-1/2">
             <UButton 
-              aria-label="下一张图片" 
+              aria-label="Next image" 
               variant="link" 
               icon="i-heroicons-chevron-right-20-solid" 
               class="text-white hover:text-gray-300 ring-1 ring-white/20 hover:ring-white/40 transition-all duration-200" 
@@ -138,13 +138,13 @@ const handleWheel = (event: WheelEvent) => {
 // 上一张图片
 const previousImage = () => {
   // 这里可以添加图片切换逻辑
-  console.log('上一张图片')
+  console.log('Previous image')
 }
 
 // 下一张图片
 const nextImage = () => {
   // 这里可以添加图片切换逻辑
-  console.log('下一张图片')
+  console.log('Next image')
 }
 
 // ESC键关闭预览

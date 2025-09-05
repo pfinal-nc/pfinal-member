@@ -23,19 +23,19 @@ export default defineNuxtConfig({
   // SEO 配置 - 优化版本
   app: {
     head: {
-      title: 'PFinalClub - 全栈开发团队 | Vue.js React Node.js 后端开发专家',
+      title: 'PFinalClub - Full Stack Development Team | Vue.js React Node.js Backend Development Experts',
       meta: [
         { charset: 'utf-8' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
         { 
           name: 'description', 
-          content: 'PFinalClub 是专业的全栈开发团队，专注于 Vue.js、React、Node.js、TypeScript 全栈开发。提供现代化 Web 应用开发、后端 API 开发、数据库设计、微服务架构、云原生开发等服务。擅长后端开发、系统架构设计、性能优化，为企业提供一站式技术解决方案。' 
+          content: 'PFinalClub is a professional full-stack development team specializing in Vue.js, React, Node.js, and TypeScript full-stack development. We provide modern web application development, backend API development, database design, microservices architecture, and cloud-native development services. Expert in backend development, system architecture design, and performance optimization, offering one-stop technical solutions for enterprises.' 
         },
         { 
           name: 'keywords', 
-          content: '全栈开发团队, Vue.js 开发专家, React 开发专家, Node.js 后端开发, TypeScript 全栈开发, 后端 API 开发, 数据库设计, 微服务架构, 云原生开发, 系统架构设计, 企业级应用开发, 电商网站开发, 管理系统开发, API 接口开发, 后端性能优化, 数据库优化, 服务器部署, 容器化部署, Docker 部署, Kubernetes 编排, 云服务部署, AWS 部署, 阿里云部署, 腾讯云部署, 负载均衡, 高可用架构, 分布式系统, 缓存设计, 消息队列, 搜索引擎优化, 监控告警, 日志管理, 安全防护, 数据备份, 灾难恢复, 自动化测试, CI/CD 流程, 代码质量保证, 测试驱动开发, 敏捷开发流程, DevOps 实践' 
+          content: 'PFinalClub, full stack development team, Vue.js development experts, React development experts, Node.js backend development, TypeScript full stack development, backend API development, database design, microservices architecture, cloud native development, system architecture design, enterprise application development, e-commerce website development, management system development, API interface development, backend performance optimization, database optimization, server deployment, containerized deployment, Docker deployment, Kubernetes orchestration, cloud service deployment, AWS deployment, Alibaba Cloud deployment, Tencent Cloud deployment, load balancing, high availability architecture, distributed systems, cache design, message queue, search engine optimization, monitoring alerts, log management, security protection, data backup, disaster recovery, automated testing, CI/CD pipeline, code quality assurance, test driven development, agile development process, DevOps practices' 
         },
-        { name: 'author', content: 'PFinalClub - 全栈开发团队' },
+        { name: 'author', content: 'PFinalClub - Full Stack Development Team' },
         { name: 'robots', content: 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' },
         { name: 'googlebot', content: 'index, follow' },
         { name: 'baiduspider', content: 'index, follow' },
@@ -59,23 +59,23 @@ export default defineNuxtConfig({
         
         // Open Graph - 增强版
         { property: 'og:type', content: 'website' },
-        { property: 'og:title', content: 'PFinalClub - 全栈开发团队 | Vue.js React Node.js 后端开发专家' },
-        { property: 'og:description', content: 'PFinalClub 是专业的全栈开发团队，专注于 Vue.js、React、Node.js、TypeScript 全栈开发。提供现代化 Web 应用开发、后端 API 开发、数据库设计、微服务架构、云原生开发等服务。' },
+        { property: 'og:title', content: 'PFinalClub - Full Stack Development Team | Vue.js React Node.js Backend Development Experts' },
+        { property: 'og:description', content: 'PFinalClub is a professional full-stack development team specializing in Vue.js, React, Node.js, and TypeScript full-stack development. We provide modern web application development, backend API development, database design, microservices architecture, and cloud-native development services.' },
         { property: 'og:image', content: 'https://friday-go.icu/logo.png' },
         { property: 'og:image:width', content: '1200' },
         { property: 'og:image:height', content: '630' },
-        { property: 'og:image:alt', content: 'PFinalClub 全栈开发团队 Logo' },
+        { property: 'og:image:alt', content: 'PFinalClub Full Stack Development Team Logo' },
         { property: 'og:url', content: 'https://member.friday-go.icu' },
-        { property: 'og:site_name', content: 'PFinalClub - 全栈开发团队' },
-        { property: 'og:locale', content: 'zh_CN' },
-        { property: 'og:locale:alternate', content: 'en_US' },
+        { property: 'og:site_name', content: 'PFinalClub - Full Stack Development Team' },
+        { property: 'og:locale', content: 'en_US' },
+        { property: 'og:locale:alternate', content: 'zh_CN' },
         
         // Twitter Card - 增强版
         { name: 'twitter:card', content: 'summary_large_image' },
-        { name: 'twitter:title', content: 'PFinalClub - 全栈开发团队 | Vue.js React Node.js 后端开发专家' },
-        { name: 'twitter:description', content: 'PFinalClub 是专业的全栈开发团队，专注于 Vue.js、React、Node.js、TypeScript 全栈开发。提供现代化 Web 应用开发、后端 API 开发、数据库设计、微服务架构、云原生开发等服务。' },
+        { name: 'twitter:title', content: 'PFinalClub - Full Stack Development Team | Vue.js React Node.js Backend Development Experts' },
+        { name: 'twitter:description', content: 'PFinalClub is a professional full-stack development team specializing in Vue.js, React, Node.js, and TypeScript full-stack development. We provide modern web application development, backend API development, database design, microservices architecture, and cloud-native development services.' },
         { name: 'twitter:image', content: 'https://friday-go.icu/logo.png' },
-        { name: 'twitter:image:alt', content: 'PFinalClub 全栈开发团队 Logo' },
+        { name: 'twitter:image:alt', content: 'PFinalClub Full Stack Development Team Logo' },
         { name: 'twitter:site', content: '@PFinalClub' },
         { name: 'twitter:creator', content: '@PFinalClub' },
         
@@ -89,7 +89,7 @@ export default defineNuxtConfig({
         { name: 'format-detection', content: 'telephone=no' },
         
         // 结构化数据相关
-        { name: 'application/ld+json', content: '{"@context":"https://schema.org","@type":"Organization","name":"PFinalClub","url":"https://member.friday-go.icu","logo":"https://friday-go.icu/logo.png","description":"专业全栈开发团队","address":{"@type":"PostalAddress","addressLocality":"China","addressRegion":"China","addressCountry":"CN"},"contactPoint":{"@type":"ContactPoint","telephone":"+52 771 404 2659","email":"lampxiezi@gmail.com","contactType":"customer service"},"sameAs":["https://github.com/pfinal-nc","https://www.facebook.com/ecostudiodev","https://friday-go.icu"]}' },
+        { name: 'application/ld+json', content: '{"@context":"https://schema.org","@type":"Organization","name":"PFinalClub","url":"https://member.friday-go.icu","logo":"https://friday-go.icu/logo.png","description":"Professional Full Stack Development Team","address":{"@type":"PostalAddress","addressLocality":"China","addressRegion":"China","addressCountry":"CN"},"contactPoint":{"@type":"ContactPoint","telephone":"+52 771 404 2659","email":"lampxiezi@gmail.com","contactType":"customer service"},"sameAs":["https://github.com/pfinal-nc","https://www.facebook.com/ecostudiodev","https://friday-go.icu"]}' },
       ],
       link: [
         { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },

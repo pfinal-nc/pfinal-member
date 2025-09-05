@@ -1,7 +1,7 @@
 <template>
   <div class="flex flex-col items-center space-y-4">
     <h3 class="text-lg font-medium text-zinc-700 dark:text-zinc-300">
-      关注我
+      Follow Me
     </h3>
     
     <div class="flex items-center gap-6">
@@ -80,7 +80,7 @@
       <NuxtLink 
         :to="website" 
         target="_blank" 
-        aria-label="个人网站" 
+        aria-label="Website" 
         v-if="website"
         class="group relative p-3 rounded-full bg-gradient-to-r from-emerald-500 to-emerald-600 hover:from-emerald-600 hover:to-emerald-700 transition-all duration-300 transform hover:scale-110 hover:shadow-lg"
       >
@@ -91,7 +91,7 @@
           dynamic 
         />
         <span class="absolute -bottom-8 left-1/2 transform -translate-x-1/2 text-xs text-zinc-600 dark:text-zinc-400 opacity-0 group-hover:opacity-100 transition-opacity duration-200 whitespace-nowrap font-sans">
-          个人网站
+          Website
         </span>
       </NuxtLink>
     </div>

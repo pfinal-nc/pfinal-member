@@ -82,39 +82,39 @@ const images = [
 // 获取图片标题
 const getImageTitle = (index: number) => {
   const titles = [
-    '前端开发',
-    '数据分析',
-    '代码编程',
-    '移动开发',
-    '技术会议',
-    'UI/UX 设计',
-    '代码开发',
-    '团队协作',
-    '代码编程',
-    '项目管理',
-    '团队讨论',
-    '项目规划'
+    'Frontend Development',
+    'Data Analysis',
+    'Code Programming',
+    'Backend Development',
+    'Tech Conference',
+    'System Architecture',
+    'API Development',
+    'Team Collaboration',
+    'Database Design',
+    'Project Management',
+    'Team Discussion',
+    'Project Planning'
   ];
-  return titles[index] || `作品 ${index + 1}`;
+  return titles[index] || `Work ${index + 1}`;
 };
 
 // 获取图片描述
 const getImageDescription = (index: number) => {
   const descriptions = [
-    '现代化 Web 应用开发',
-    '数据可视化与分析',
-    '高效代码编写',
-    '移动端应用开发',
-    '技术交流与分享',
-    '用户体验设计',
-    '全栈开发实践',
-    '团队协作开发',
-    '代码质量优化',
-    '敏捷项目管理',
-    '技术方案讨论',
-    '项目需求分析'
+    'Modern Web Application Development',
+    'Data Visualization & Analysis',
+    'Efficient Code Writing',
+    'Backend Application Development',
+    'Tech Exchange & Sharing',
+    'System Architecture Design',
+    'Full Stack Development Practice',
+    'Team Collaborative Development',
+    'Code Quality Optimization',
+    'Agile Project Management',
+    'Technical Solution Discussion',
+    'Project Requirements Analysis'
   ];
-  return descriptions[index] || '专业开发服务';
+  return descriptions[index] || 'Professional Development Services';
 };
 </script>
 

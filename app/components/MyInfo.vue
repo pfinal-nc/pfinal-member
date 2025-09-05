@@ -18,40 +18,40 @@
     <!-- 技能标签 -->
     <div class="flex flex-wrap justify-center gap-2 mt-4">
       <span class="px-3 py-1 bg-emerald-100 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-300 text-sm rounded-full font-medium">
-        Vue.js 全栈
+        Vue.js Full Stack
       </span>
       <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 text-sm rounded-full font-medium">
-        React 全栈
+        React Full Stack
       </span>
       <span class="px-3 py-1 bg-purple-100 dark:bg-purple-900/30 text-purple-700 dark:text-purple-300 text-sm rounded-full font-medium">
         TypeScript
       </span>
       <span class="px-3 py-1 bg-red-100 dark:bg-red-900/30 text-red-700 dark:text-red-300 text-sm rounded-full font-medium">
-        Node.js 后端
+        Node.js Backend
       </span>
       <span class="px-3 py-1 bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-300 text-sm rounded-full font-medium">
-        数据库设计
+        Database Design
       </span>
       <span class="px-3 py-1 bg-teal-100 dark:bg-teal-900/30 text-teal-700 dark:text-teal-300 text-sm rounded-full font-medium">
-        微服务架构
+        Microservices
       </span>
       <span class="px-3 py-1 bg-cyan-100 dark:bg-cyan-900/30 text-cyan-700 dark:text-cyan-300 text-sm rounded-full font-medium">
-        云原生开发
+        Cloud Native
       </span>
       <span class="px-3 py-1 bg-yellow-100 dark:bg-yellow-900/30 text-yellow-700 dark:text-yellow-300 text-sm rounded-full font-medium">
-        系统架构
+        System Architecture
       </span>
       <span class="px-3 py-1 bg-indigo-100 dark:bg-indigo-900/30 text-indigo-700 dark:text-indigo-300 text-sm rounded-full font-medium">
-        API 开发
+        API Development
       </span>
       <span class="px-3 py-1 bg-pink-100 dark:bg-pink-900/30 text-pink-700 dark:text-pink-300 text-sm rounded-full font-medium">
         DevOps
       </span>
       <span class="px-3 py-1 bg-orange-100 dark:bg-orange-900/30 text-orange-700 dark:text-orange-300 text-sm rounded-full font-medium">
-        性能优化
+        Performance
       </span>
       <span class="px-3 py-1 bg-lime-100 dark:bg-lime-900/30 text-lime-700 dark:text-lime-300 text-sm rounded-full font-medium">
-        容器化部署
+        Containerization
       </span>
     </div>
   </div>
@@ -59,9 +59,9 @@
 
 <script lang="ts" setup>
 // 使用静态数据避免服务端渲染问题
-const title = '全栈开发工程师';
+const title = 'Full Stack Developer';
 const name = 'PFinalClub';
-const bio = '专业的全栈开发团队。我们专注于构建现代化、高性能、安全且可扩展的 Web 应用和系统架构，擅长后端开发、数据库设计、微服务架构和云原生开发。';
+const bio = 'Professional full-stack development team. We focus on building modern, high-performance, secure and scalable web applications and system architectures, specializing in backend development, database design, microservices architecture and cloud-native development.';
 </script>
 
 <style scoped>

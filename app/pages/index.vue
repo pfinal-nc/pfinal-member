@@ -29,7 +29,7 @@
           <!-- 作品展示区域 -->
           <div v-motion-slide-visible-bottom class="w-full max-w-7xl">
             <h3 class="text-xl font-semibold text-zinc-800 dark:text-zinc-200 mb-6 text-center">
-              精选作品
+              Featured Works
             </h3>
             <LazyGallery />
           </div>
@@ -45,23 +45,23 @@
 // 动态 SEO - 使用静态数据避免 hydration 问题
 if (process.client) {
   useHead({
-  title: 'PFinalClub - 全栈开发团队 | Vue.js React Node.js 后端开发专家',
+  title: 'PFinalClub - Full Stack Development Team | Vue.js React Node.js Backend Development Experts',
   meta: [
     {
       name: 'description',
-      content: 'PFinalClub 是专业的全栈开发团队，专注于 Vue.js、React、Node.js、TypeScript 全栈开发。提供现代化 Web 应用开发、后端 API 开发、数据库设计、微服务架构、云原生开发等服务。擅长后端开发、系统架构设计、性能优化，为企业提供一站式技术解决方案。'
+      content: 'PFinalClub is a professional full-stack development team specializing in Vue.js, React, Node.js, and TypeScript full-stack development. We provide modern web application development, backend API development, database design, microservices architecture, and cloud-native development services. Expert in backend development, system architecture design, and performance optimization, offering one-stop technical solutions for enterprises.'
     },
     {
       name: 'keywords',
-      content: '全栈开发团队, Vue.js 开发专家, React 开发专家, Node.js 后端开发, TypeScript 全栈开发, 后端 API 开发, 数据库设计, 微服务架构, 云原生开发, 系统架构设计, 企业级应用开发, 电商网站开发, 管理系统开发, API 接口开发, 后端性能优化, 数据库优化, 服务器部署, 容器化部署, Docker 部署, Kubernetes 编排, 云服务部署, AWS 部署, 阿里云部署, 腾讯云部署, 负载均衡, 高可用架构, 分布式系统, 缓存设计, 消息队列, 搜索引擎优化, 监控告警, 日志管理, 安全防护, 数据备份, 灾难恢复, 自动化测试, CI/CD 流程, 代码质量保证, 测试驱动开发, 敏捷开发流程, DevOps 实践'
+      content: 'PFinalClub, full stack development team, Vue.js development experts, React development experts, Node.js backend development, TypeScript full stack development, backend API development, database design, microservices architecture, cloud native development, system architecture design, enterprise application development, e-commerce website development, management system development, API interface development, backend performance optimization, database optimization, server deployment, containerized deployment, Docker deployment, Kubernetes orchestration, cloud service deployment, AWS deployment, Alibaba Cloud deployment, Tencent Cloud deployment, load balancing, high availability architecture, distributed systems, cache design, message queue, search engine optimization, monitoring alerts, log management, security protection, data backup, disaster recovery, automated testing, CI/CD pipeline, code quality assurance, test driven development, agile development process, DevOps practices'
     },
     {
       property: 'og:title',
-      content: 'PFinalClub - 全栈开发团队 | Vue.js React Node.js 后端开发专家'
+      content: 'PFinalClub - Full Stack Development Team | Vue.js React Node.js Backend Development Experts'
     },
     {
       property: 'og:description',
-      content: 'PFinalClub 是专业的全栈开发团队，专注于 Vue.js、React、Node.js、TypeScript 全栈开发。提供现代化 Web 应用开发、后端 API 开发、数据库设计、微服务架构、云原生开发等服务。'
+      content: 'PFinalClub is a professional full-stack development team specializing in Vue.js, React, Node.js, and TypeScript full-stack development. We provide modern web application development, backend API development, database design, microservices architecture, and cloud-native development services.'
     },
     {
       property: 'og:image',
@@ -69,7 +69,7 @@ if (process.client) {
     },
     {
       property: 'og:image:alt',
-      content: 'PFinalClub 全栈开发团队 Logo'
+      content: 'PFinalClub Full Stack Development Team Logo'
     }
   ],
   // 添加结构化数据
@@ -80,8 +80,8 @@ if (process.client) {
         '@context': 'https://schema.org',
         '@type': 'Organization',
         name: 'PFinalClub',
-        alternateName: '全栈开发团队',
-        description: 'PFinalClub 是专业的全栈开发团队，专注于 Vue.js、React、Node.js、TypeScript 全栈开发。提供现代化 Web 应用开发、后端 API 开发、数据库设计、微服务架构、云原生开发等服务。',
+        alternateName: 'Full Stack Development Team',
+        description: 'PFinalClub is a professional full-stack development team specializing in Vue.js, React, Node.js, and TypeScript full-stack development. We provide modern web application development, backend API development, database design, microservices architecture, and cloud-native development services.',
         url: 'https://member.friday-go.icu',
         logo: 'https://friday-go.icu/logo.png',
         image: 'https://friday-go.icu/logo.png',
@@ -109,24 +109,24 @@ if (process.client) {
         founder: {
           '@type': 'Person',
           name: 'PFinalClub',
-          jobTitle: '开发工程师',
-          description: '来自上海的优秀团队。我们专注于构建现代化、高性能、安全且可扩展的 Web 应用和网站。'
+          jobTitle: 'Full Stack Developer',
+          description: 'Professional development team. We focus on building modern, high-performance, secure and scalable web applications and systems.'
         },
         serviceType: [
-          '全栈开发',
-          '后端开发',
-          'API 开发',
-          '数据库设计',
-          '微服务架构',
-          '云原生开发',
-          '系统架构设计',
-          '企业级应用开发',
-          '电商网站开发',
-          '管理系统开发',
-          '性能优化',
-          '服务器部署',
-          '容器化部署',
-          'DevOps 实践'
+          'Full Stack Development',
+          'Backend Development',
+          'API Development',
+          'Database Design',
+          'Microservices Architecture',
+          'Cloud Native Development',
+          'System Architecture Design',
+          'Enterprise Application Development',
+          'E-commerce Website Development',
+          'Management System Development',
+          'Performance Optimization',
+          'Server Deployment',
+          'Containerized Deployment',
+          'DevOps Practices'
         ],
         areaServed: {
           '@type': 'Country',
@@ -134,86 +134,86 @@ if (process.client) {
         },
         hasOfferCatalog: {
           '@type': 'OfferCatalog',
-          name: '全栈开发服务',
+          name: 'Full Stack Development Services',
           itemListElement: [
             {
               '@type': 'Offer',
               itemOffered: {
                 '@type': 'Service',
-                name: 'Vue.js 全栈开发',
-                description: '专业的 Vue.js 全栈开发服务'
+                name: 'Vue.js Full Stack Development',
+                description: 'Professional Vue.js full stack development services'
               }
             },
             {
               '@type': 'Offer',
               itemOffered: {
                 '@type': 'Service',
-                name: 'React 全栈开发',
-                description: '基于 React 的全栈开发服务'
+                name: 'React Full Stack Development',
+                description: 'React-based full stack development services'
               }
             },
             {
               '@type': 'Offer',
               itemOffered: {
                 '@type': 'Service',
-                name: 'Node.js 后端开发',
-                description: 'Node.js 后端 API 开发服务'
+                name: 'Node.js Backend Development',
+                description: 'Node.js backend API development services'
               }
             },
             {
               '@type': 'Offer',
               itemOffered: {
                 '@type': 'Service',
-                name: 'TypeScript 开发',
-                description: 'TypeScript 类型安全的开发服务'
+                name: 'TypeScript Development',
+                description: 'TypeScript type-safe development services'
               }
             },
             {
               '@type': 'Offer',
               itemOffered: {
                 '@type': 'Service',
-                name: '数据库设计',
-                description: '专业的数据库设计和优化服务'
+                name: 'Database Design',
+                description: 'Professional database design and optimization services'
               }
             },
             {
               '@type': 'Offer',
               itemOffered: {
                 '@type': 'Service',
-                name: '微服务架构',
-                description: '微服务架构设计和开发服务'
+                name: 'Microservices Architecture',
+                description: 'Microservices architecture design and development services'
               }
             },
             {
               '@type': 'Offer',
               itemOffered: {
                 '@type': 'Service',
-                name: '云原生开发',
-                description: '云原生应用开发服务'
+                name: 'Cloud Native Development',
+                description: 'Cloud native application development services'
               }
             },
             {
               '@type': 'Offer',
               itemOffered: {
                 '@type': 'Service',
-                name: '系统架构设计',
-                description: '企业级系统架构设计服务'
+                name: 'System Architecture Design',
+                description: 'Enterprise system architecture design services'
               }
             },
             {
               '@type': 'Offer',
               itemOffered: {
                 '@type': 'Service',
-                name: 'DevOps 实践',
-                description: 'DevOps 流程和自动化部署服务'
+                name: 'DevOps Practices',
+                description: 'DevOps process and automated deployment services'
               }
             },
             {
               '@type': 'Offer',
               itemOffered: {
                 '@type': 'Service',
-                name: '性能优化',
-                description: '系统性能优化和调优服务'
+                name: 'Performance Optimization',
+                description: 'System performance optimization and tuning services'
               }
             }
           ]

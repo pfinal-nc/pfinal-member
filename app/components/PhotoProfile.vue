@@ -7,7 +7,7 @@
     <div class="relative">
       <UAvatar 
         size="3xl" 
-        :alt="`${name} 的头像照片`" 
+        :alt="`${name} profile photo`" 
         height="400" 
         width="400" 
         :src="avatar" 

@@ -19,10 +19,10 @@
           <p class="text-sm text-zinc-500 dark:text-zinc-500">
             © {{ new Date().getFullYear() }} 
             <span class="font-semibold text-emerald-600 dark:text-emerald-400">PFinalClub</span>. 
-            保留所有权利
+            All rights reserved
           </p>
           <!-- <p class="text-xs text-zinc-400 dark:text-zinc-600 mt-1">
-            由 Nuxt 3 + Vue 3 构建
+            Built with Nuxt 3 + Vue 3
           </p> -->
         </div>
       </div>
